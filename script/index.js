@@ -1,6 +1,10 @@
 'use strict';
 
-const header = prompt('Заполните поле');
-const form = prompt('Заполните поле');
-const checkbox = prompt('Заполните поле');
-const checkboxField = prompt('Заполните поле');
+const header = document.getElementsByClassName('modal__title');
+const form = document.getElementsByClassName('modal__form');
+const checkbox = document.getElementsByClassName('modal__checkbox');
+const checkboxField = document.getElementsByClassName('modal__input_discount');
+// console.log(header);
+// console.log(form);
+// console.log(checkbox);
+// console.log(checkboxField);
