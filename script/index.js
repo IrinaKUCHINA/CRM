@@ -107,3 +107,23 @@ function renderGoods() {
 }
 
 renderGoods(base);
+
+const btnAdd = document.querySelector('.panel__add-goods');
+const btnClose = document.querySelector('.modal__close');
+const overlayModal = document.querySelector('.overlay__modal');
+
+btnAdd.addEventListener('click', () => {
+  overlay.classList.add('active');
+});
+
+overlayModal.addEventListener('click', event => {
+  event.stopImmediatePropagation();
+});
+
+overlay.addEventListener('click', () => {
+  overlay.classList.remove('active');
+});
+
+btnClose.addEventListener('click', () => {
+  overlay.classList.remove('active');
+});
