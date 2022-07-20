@@ -134,8 +134,8 @@ tr.classList.add('line');
 list.addEventListener('click', e => {
   console.log(e.target)
   
-//   if (e.target.closest('.table__btn_del')) {
-//     e.target.closest('line').remove();
-//   };
+  if (e.target.closest('.table__btn_del')) {
+    e.target.closest('line').remove();
+  };
 })
 
