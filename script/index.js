@@ -129,13 +129,17 @@ btnClose.addEventListener('click', () => {
 });
 
 const tr = document.querySelectorAll('tr');
-tr.classList.add('line');
+
+tr.forEach(tr => {
+  tr.classList.add('line');
+}) 
 
 list.addEventListener('click', e => {
-  console.log(e.target)
+  // console.log(e.target)
   
   if (e.target.closest('.table__btn_del')) {
-    e.target.closest('line').remove();
+    e.target.closest('.line').remove();
   };
 })
+
 
